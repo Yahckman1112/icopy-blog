@@ -47,16 +47,16 @@ const AppBars = () => {
   const handleOpenNavMenu = (event) => {
     setanchorElNav(event.currentTarget);
   };
-
+  const open = Boolean(anchorElNav)
   const handleCloseNavMenu = () => {
     setanchorElNav(null);
   };
   return (
-    <div className="container-fluid">
+    <div >
       <AppBar position="static" color="primary">
         <Container maxWidth="x1">
           <Toolbar disableGutters>
-            <BookmarkIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+            <BookmarkIcon sx={{ display: { xs: "none", md: "flex" },  mr: 1 }} />
             <Typography
               variant="h6"
               noWrap
@@ -91,14 +91,14 @@ const AppBars = () => {
                 anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
                 keepMounted
                 tranformOrigin={{ vertical: "top", horizontal: "left" }}
-                open={Boolean(anchorElNav)}
+                open={open}
                 onClose={handleCloseNavMenu}
                 sx={{
                   display: { xs: "block", md: "none" },
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu} >
+                  <MenuItem key={page.text} onClick={handleCloseNavMenu} >
                     <Link to={page.href}> {page.text} </Link>
                     {/* <Typography textAlign="center"></Typography> */}
                   </MenuItem>
@@ -127,7 +127,7 @@ const AppBars = () => {
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page) => (
                 <Button
-                  key={page}
+                  key={page.text}
                   onClick={handleCloseNavMenu}
                   href= {page.href}
                   sx={{ my: 2, color: "white", display: "black" }}

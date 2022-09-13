@@ -1,11 +1,11 @@
-import React from 'react';
-
+import React from "react";
+import LandPage from './landingpage/landPage'
 function Home(props) {
-    return (
-        <div>
-            <p>This is home Page</p>
-        </div>
-    );
+  return (
+    <div className="col-12">
+    <LandPage/>
+    </div>
+  );
 }
 
 export default Home;
