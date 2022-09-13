@@ -1,0 +1,43 @@
+.homebody{
+    padding-top: 90px;
+}
+
+
+.homebody-para1{
+padding: 10px;
+size: 10px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.homebody-para2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.homebody-para3{
+    display: block;
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    word-spacing: 6px;
+}
+
+.homebody-para4{
+    display: block;
+    font-size: 18px;
+    margin: 30px 0 0 0;
+    text-align: justify;
+    line-height: 30px;
+}
+.homebody-para5{
+   
+    padding:10px;
+    margin-top: 5px;    
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    /* border: 0px 0 0 20px;
+    border-color: red; */
+    text-align: justify;
+    display: block;
+}
+

@@ -21,12 +21,11 @@ function LandPage(props) {
             </span>
           </p>
           <Link to="#" className="home__info--Button">
-            Yes Please <ArrowForwardRoundedIcon />
+            Yes Please <i className="fa fa-sharp fa-solid fa-arrow-right"></i>
           </Link>{" "}
         </div>
 
         <div className="col-sm-6 home__head--pix"> </div>
-        {/* <div className='alert-warning'> loremn bnaxdbjaskjdlksadlksad</div> */}
       </div>
     </div>
   );

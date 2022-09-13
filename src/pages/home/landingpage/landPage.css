@@ -54,4 +54,5 @@
     background-image: url('/public/images/home_side.jpg');
     background-size: cover;
     background-position: center;
+    height: 80vh;
 }
