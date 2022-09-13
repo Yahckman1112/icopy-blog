@@ -1,58 +1,30 @@
-import React, { Component } from 'react';
-import NavBar from './components/navbar';
-import Counters from './components/counters';
+import React, { Component } from "react";
+import AppBar from "./components/appBar/appBar";
+// import NavBar from './components/navBar/navBar';
+import { Switch, Route } from "react-router-dom";
+import Home from "./pages/home/home";
+import Blog from "./pages/blog/blog";
+import Contact from "./pages/contactus/contact";
+import About from "./pages/about/about";
 
-import './App.css';
-class   App extends  Component {
-  state = { 
-    counters : [
-        {id:1 , value:4},
-        {id:2 , value:0},
-        {id:3 , value:0},
-        {id:4 , value:0}
-    ]
- } 
- handleIncrement = counter =>{
-    const counters = [...this.state.counters];
-    const index = counters.indexOf(counter);
-    counters[index] = {...counter};
-    counters[index].value++;
-    this.setState({counters})
- }
-
-
- handleDelete = counterId =>{
-    // leave all except the clicked id
-    const counters = this.state.counters.filter(c => c.id!== counterId)
-    this.setState({counters })
-    
- }
-
- handleReset =() =>{
-    const counters = this.state.counters.map(c=>{
-        c.value = 0;
-        return c;
-    })
-    this.setState({counters})
- } 
-  render() { 
+class App extends Component {
+  render() {
     return (
-      <React.Fragment>
-      <NavBar 
-      totalCounter = {this.state.counters.filter(c => c.value>0).length}
-      />
-      <main className = 'container'>
-      <Counters 
-      counters = {this.state.counters}
-      onReset = {this.handleReset }
-      onIncrement = {this.handleIncrement}
-      onDelete = {this.handleDelete}
-      />
-      </main>
-    </React.Fragment>
+      <div>
+        <AppBar />
+        {/* <NavBar/> */}
+        {/* <About /> */}
+
+      <Switch>
+      <Route path="/contact" component={Contact}/>
+      <Route path="/blog" component={Blog}/>
+      <Route path = "/about" component={About}/>
+      <Route path="/"  component={Home}/>
+  
+      </Switch>
+      </div>
     );
   }
 }
- 
-export default App ;
 
+export default App;
