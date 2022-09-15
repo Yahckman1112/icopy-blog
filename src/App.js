@@ -6,6 +6,7 @@ import Home from "./pages/home/home";
 import Blog from "./pages/blog/blog";
 import Contact from "./pages/contactus/contact";
 import About from "./pages/about/about";
+import Footer from "./components/footer/footer";
 
 class App extends Component {
   render() {
@@ -15,13 +16,14 @@ class App extends Component {
         {/* <NavBar/> */}
         {/* <About /> */}
 
-      <Switch>
-      <Route path="/contact" component={Contact}/>
-      <Route path="/blog" component={Blog}/>
-      <Route path = "/about" component={About}/>
-      <Route path="/"  component={Home}/>
-  
-      </Switch>
+        <Switch>
+          <Route path="/contact" component={Contact} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/about" component={About} />
+          <Route path="/" component={Home} />
+        </Switch>
+
+        <Footer />
       </div>
     );
   }
