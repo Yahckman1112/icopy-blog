@@ -4,14 +4,20 @@ import FooterList from "./footerList";
 import { Link } from "react-router-dom";
 import { BsTwitter, BsInstagram } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
-
+import IconButton from "@mui/material/IconButton";
+import GraphicEqRoundedIcon from "@mui/icons-material/GraphicEqRounded";
 import Divider from "@mui/material/Divider";
 
 function Footer(props) {
   return (
     <div className=" footer ">
       <div className="container-fluid">
+        <IconButton className="card-logo" >
+          <GraphicEqRoundedIcon sx={{ fontSize: "50px", margin:'0px' }}  className="color-yellow" />
+        </IconButton>
         <span className="  footer_cop"> IcopyStory</span>
+
+
 
         <div className="row footer_mail-icons">
           <div className=" col-sx-12 col-sm-6 col-md-6 footer_social">

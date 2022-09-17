@@ -1,0 +1,65 @@
+.card-design{
+    margin-right: 50px;
+    text-align: center !important;
+    height: 70vh;
+  
+}
+
+
+.card{
+    border-radius: 10%;
+    height: 90%;
+    padding-top: 30px;
+}
+
+
+
+.card-logo{
+    background-color: gainsboro;
+    box-shadow:0 3px 10px rgba(0, 0, 0, 0.418);
+    padding-top: 50px;
+
+}
+
+.card-logo:hover{
+    transform: translateY(-2px);
+    background-color: rgba(220, 220, 220, 0.22);
+
+}
+
+.card-title,
+.card-text{
+    line-height: 2;
+} 
+
+
+
+
+.card-title{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 2;
+    text-transform: capitalize;
+
+}
+
+.card-text{
+    font-size: 18px;
+
+}
+
+.card-btn{
+    background-color: #fb9c23;
+    border-radius: 70px;
+    padding: 10px 35px;
+    text-decoration: none;
+    color: #fff;
+   margin-left: 30%;
+}
+
+.card-btn:hover{
+    color: #fff;
+    text-decoration: none;
+}   
