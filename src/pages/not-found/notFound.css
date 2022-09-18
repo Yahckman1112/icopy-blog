@@ -1,0 +1,38 @@
+.footer-body{
+    text-align: center;
+    padding: 100px 30px;
+    height: 100vh;
+    line-height: 2;
+}
+.not-main{
+    font-size: 90px;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-para2{
+    font-size: 30px;
+    font-weight: 700;  
+    text-transform: uppercase;
+}
+.footer-para3{
+    font-size: 20px;
+    padding: 5px ;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.274);
+}
+
+.footer-btn{
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 100px;
+    margin-top: 50px;
+
+}
+
+.footer-btn:hover{
+    transform: translateY(-3%);
+    text-decoration: none;
+    color: white;
+}

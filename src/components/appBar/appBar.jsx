@@ -8,39 +8,15 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
-
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import Menu from "@mui/icons-material/Menu";
+import { pages } from './pages';
 import {Link} from 'react-router-dom'
 
 
 const AppBars = () => {
 
-  const pages = [
-    {
-      text: 'Home',
-      href:'/'
-    },
-    {
-      text: 'About',
-      href:'/about'
-    },
-  
-    {
-      text: 'Blog',
-      href:'/blog'
-    },
-    
-    {
-      text: 'Portfolio',
-      href:'/'
-    },
-    {
-      text: 'Contact',
-      href:'/contact'
-    },
-  
-    ];
+ 
   
   const [anchorElNav, setanchorElNav] = React.useState(null);
 
