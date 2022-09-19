@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./notFound.css";
 function NotFound(props) {
   return (
-    <div className="footer-body">
+    <div className="footer-body col-12 col-xs-12 col-sm-12">
       <p className="not-main"> Oops! </p>
       <p className="footer-para2">404-page not found</p>
       <p className="footer-para3">

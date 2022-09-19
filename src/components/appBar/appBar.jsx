@@ -8,31 +8,31 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
-import BookmarkIcon from '@mui/icons-material/Bookmark';
+import BookmarkIcon from "@mui/icons-material/Bookmark";
 import Menu from "@mui/icons-material/Menu";
-import { pages } from './pages';
-import {Link} from 'react-router-dom'
-
+import { pages } from "./pages";
+import { Link } from "react-router-dom";
+import "./appbar.css";
 
 const AppBars = () => {
-
- 
-  
   const [anchorElNav, setanchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setanchorElNav(event.currentTarget);
   };
-  const open = Boolean(anchorElNav)
+  const open = Boolean(anchorElNav);
   const handleCloseNavMenu = () => {
     setanchorElNav(null);
   };
   return (
-    <div >
-      <AppBar position="static" color="primary">
+    <div>
+      <AppBar
+        position="static"
+        style={{ backgroundColor: "#F2F1EE", color: "black" }}
+      >
         <Container maxWidth="x1">
           <Toolbar disableGutters>
-            <BookmarkIcon sx={{ display: { xs: "none", md: "flex" },  mr: 1 }} />
+            {/* <BookmarkIcon sx={{ display: { xs: "none", md: "flex" },  mr: 1 }} /> */}
             <Typography
               variant="h6"
               noWrap
@@ -74,14 +74,14 @@ const AppBars = () => {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page.text} onClick={handleCloseNavMenu} >
+                  <MenuItem key={page.text} onClick={handleCloseNavMenu}>
                     <Link to={page.href}> {page.text} </Link>
                     {/* <Typography textAlign="center"></Typography> */}
                   </MenuItem>
                 ))}
               </Menu>
             </Box>
-            <BookmarkIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+            {/* <BookmarkIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
             <Typography
               variant="h5"
               noWrap
@@ -103,10 +103,11 @@ const AppBars = () => {
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page) => (
                 <Button
+                  style={{ fontWeight: "bold", textTransform: "capitalize" }}
                   key={page.text}
                   onClick={handleCloseNavMenu}
-                  href= {page.href}
-                  sx={{ my: 2, color: "white", display: "black" }}
+                  href={page.href}
+                  sx={{ my: 2, mx: 2, color: "black", display: "black" }}
                 >
                   {page.text}
                 </Button>
