@@ -1,23 +1,14 @@
-import React from 'react';
+import React from "react";
+import AboutLandingPage from "./aboutLanding/aboutLandingPage";
+import AboutBody from "./aboutBody/aboutBody";
 
 function About(props) {
-    return (
-        <div>
-            <p> 1 This is Baout Page</p>
-            <p>This is Baout Page</p>
-            <p>This is Baout Page</p>
-            <p>This is Baout Page</p>
-            <p>This is Baout Page</p>
-            <p>This is Baout Page</p>
-            <p>This is Baout Page</p>
-            <p>This is Baout Page</p>
-            <p>This is Baout Page</p>
-            <p>This is Baout Page</p>
-            <p>This is Baout Page</p>
-            <p>This is Baout Page</p>
-            <p>This is Baout Page</p>
-        </div>
-    );
+  return (
+    <div>
+      <AboutLandingPage />
+      <AboutBody />
+    </div>
+  );
 }
 
 export default About;

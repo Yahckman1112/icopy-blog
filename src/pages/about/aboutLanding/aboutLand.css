@@ -1,0 +1,44 @@
+.about{
+    width: 100%;
+}
+
+.about-up{
+    height: 100vh;
+    width: 100v;
+    background-color: #F2F1EE;
+    padding-top: 20px;
+    position: relative;
+}
+.about_up_main{
+    height: 70%;
+    position: absolute;
+    left: 10%;
+    padding: 10% 0px 0px 20px;
+    
+    
+}
+
+.about_up_para1{
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about_up_para1_span{
+    cursor: pointer;
+    text-underline-position: below;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: 1px solid;
+}
+
+
+
+.about__head--pix{
+    padding: 10px;
+    border-radius: 15px;
+    background-image: url('/public/images/about_side.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 80vh;
+}

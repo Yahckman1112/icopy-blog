@@ -5,7 +5,7 @@ function HomeBody(props) {
     <div className=" homebody container col-12 col-sm-9 col-md-lg-6 col-xs-12">
       {/* <div className='alert-warning'> loremn bnaxdbjaskjdlksadlksad</div> */}
 
-      <p className="homebody-para1 alert-warning col-sm-3">
+      <p className="homebody-para1 alert-warning col-12 col-sm-3">
         Shall we help sell your stories{" "}
       </p>
       <p>
