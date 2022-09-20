@@ -8,6 +8,7 @@ import Contact from "./pages/contactus/contact";
 import About from "./pages/about/about";
 import Footer from "./components/footer/footer";
 import NotFound from './pages/not-found/notFound';
+import Services from './pages/services/services'
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
           <Route path="/not-found" component={NotFound} />
+          <Route path="/services" component={Services} />
           <Route path="/about" component={About} />
           <Route path="/" exact component={Home} />
           <Redirect to ='/not-found'/>

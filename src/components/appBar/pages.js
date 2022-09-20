@@ -9,6 +9,10 @@ export const pages = [
     },
   
     {
+      text: 'Services',
+      href:'/services'
+    },
+    {
       text: 'Blog',
       href:'/blog'
     },
