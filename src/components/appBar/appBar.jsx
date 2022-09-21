@@ -107,7 +107,7 @@ const AppBars = () => {
                   key={page.text}
                   onClick={handleCloseNavMenu}
                   href={page.href}
-                  sx={{ my: 2, mx: 2, color: "black", display: "black" }}
+                  sx={{ my: 2, mx: 1, color: "black", display: "black" }}
                 >
                   {page.text}
                 </Button>

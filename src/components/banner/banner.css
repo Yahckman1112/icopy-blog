@@ -1,0 +1,18 @@
+.banner_main_text{
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.banner_sub{
+    
+    padding-top: 60px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+.banner_first_side{
+    position: absolute;
+    left:10%;
+    top: 19%;
+}

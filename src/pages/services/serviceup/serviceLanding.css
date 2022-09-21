@@ -1,0 +1,17 @@
+.service_landing{
+    
+    background-color: #F2F1EE;
+    height: 95vh;
+    padding-top: 40px;
+    position: relative;
+    padding-top: 40px;
+}
+
+.service_land_bg{
+    padding: 10px;
+    border-radius: 15px;
+    background-size: cover;
+    background-image: url('/public/images/about_side.jpg');
+    background-position: top;
+    height: 80vh;
+}
