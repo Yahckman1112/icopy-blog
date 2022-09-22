@@ -1,6 +1,5 @@
 import React from "react";
 import BannerSideOne from "../../../components/banner/sideOne";
-import BannerSideTwo from "../../../components/banner/sidewo";
 import "./serviceLanding.css";
 function ServiceLandingPage(props) {
   return (

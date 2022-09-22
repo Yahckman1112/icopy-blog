@@ -10,9 +10,31 @@
     padding-top: 60px;
     font-size: 13px;
     line-height: 1.7;
+    margin-bottom: 80px;
+
 }
 .banner_first_side{
     position: absolute;
     left:10%;
     top: 19%;
+}
+
+
+.banner_btn_p{
+   
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    
+}
+
+.banner_btn{
+    text-align: none;
+    background: #691111a4 ;
+    color: white;
+    text-align: center;
+    border-radius: 100px;
+    padding: 5px 20px;
+    margin-top: 50px;
 }

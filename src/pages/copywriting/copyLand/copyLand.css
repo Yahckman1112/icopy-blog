@@ -1,0 +1,22 @@
+.copy_land{
+    background-color: #F2F1EE;
+    padding-top: 40px;
+    position: relative;
+    padding-top: 40px;
+    height: 100vh;
+}
+
+.copy_land_text{
+    text-align: center;
+    display: block;
+    
+}
+
+.copy_land_pics{
+    padding: 10px;
+    border-radius: 15px;
+    background-image: url('../../../images/copy2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}

@@ -1,0 +1,28 @@
+.bigCard{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 10;
+}
+
+.bigCard_para1{
+    font-size: 30px;
+    font-weight: 700;
+   
+}
+.bigCard_para2{
+    font-size: 15px;
+    
+}
+.bigCard_Button{
+    position: absolute;
+    left:40%;
+    align-items: center;
+    color: red;
+    padding-top: 15px;
+}
+.bigCard_Button:hover{
+    color: red;
+}

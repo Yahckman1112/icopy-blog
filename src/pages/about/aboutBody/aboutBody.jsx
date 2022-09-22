@@ -20,7 +20,7 @@ function AboutBody(props) {
     </div>
       <AboutText
         text={Texts.map((text) => (
-          <p>{text.text2}</p>
+          <p style={{whiteSpace:'pre-line'}}>{text.text2}</p>
         ))}
       />
     </div>

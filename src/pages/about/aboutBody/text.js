@@ -9,7 +9,8 @@ export const Texts = [
     text2: `That's cool. But before you read any further, lemme quickly push this disclaimer forward:`, 
     },
     {
-    text2: `This page is solely ABOUT ME! As you read further, you will continually see a lot of self-aggrandizement and pomposity I exude. 
+    text2: `This page is solely ABOUT ME! As you read further, 
+    you will continually see a lot of self-aggrandizement and pomposity I exude. 
     If you don't have the gut to handle my kind, quickly backstep before reading further.  
     If you don't, you might fall off the cliff of calmness and plunge into an abyss of continual hiss and frown.  
     But if you have the stomach to stomach my pride, I guess you're in for a very short haul of pomposity and puffiness.  
