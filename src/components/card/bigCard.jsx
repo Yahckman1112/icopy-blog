@@ -13,7 +13,7 @@ function BigCard({image,CardHeader,cardText,cardLink}) {
   return (
     <div className="col-12 col-sm-12 bigCard">
       <Card sx={{ maxWidth: 600 }}>
-        <CardMedia component="img" height="320" image={image} alt="man" />
+        <CardMedia component="img" height="320" image={`assets/images/${image}`} alt="man" />
         <CardContent style={{height:200}}>
           <p className="bigCard_para1">{CardHeader}</p>
           <p className="bigCard_para2">

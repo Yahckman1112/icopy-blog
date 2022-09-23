@@ -11,6 +11,7 @@ function ServiceLandingPage(props) {
             firstSpan="Hey there
             "
             secondSpan="Explore my services"
+            linkName='Get Started'
           />
         </div>
         <div className="col-12 col-sm-6 service_land_bg">

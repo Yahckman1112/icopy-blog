@@ -29,6 +29,7 @@ class App extends Component {
           <Redirect to="/not-found" />
         </Switch>
        
+      
         <Footer />
 
 
