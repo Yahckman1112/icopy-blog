@@ -9,7 +9,7 @@ import "./bigCard.css";
 
 
 
-function BigCard({image,CardHeader,cardText,cardLink}) {
+function BigCard({image,CardHeader,cardText,cardLink, linkText}) {
   return (
     <div className="col-12 col-sm-12 bigCard">
       <Card sx={{ maxWidth: 600 }}>
@@ -22,7 +22,7 @@ function BigCard({image,CardHeader,cardText,cardLink}) {
 
           <Divider />
           <CardActions>
-            <Link className='bigCard_Button' to ={cardLink} >Learn More</Link>
+            <Link className='bigCard_Button' to ={cardLink} >{linkText}</Link>
           </CardActions>
         </CardContent>
       </Card>

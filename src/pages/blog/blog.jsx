@@ -1,9 +1,11 @@
 import React from 'react';
-
+import BlogBanner from './blogBanner/blogbanner';
+import BlogBody from './blogBody/blogBody';
 function Blog(props) {
     return (
         <div>
-            <p>This is Blog Page</p>
+            < BlogBanner />
+            < BlogBody/>
         </div>
     );
 }
