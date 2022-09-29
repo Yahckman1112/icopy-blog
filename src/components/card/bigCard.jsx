@@ -9,12 +9,12 @@ import "./bigCard.css";
 
 
 
-function BigCard({image,CardHeader,cardText,cardLink, linkText}) {
+function BigCard({image,CardHeader,cardText,cardLink,linkName}) {
   return (
-    <div className="col-12 col-sm-12 bigCard">
+    <div className="col-12 col-sm-5 bigCard">
       <Card sx={{ maxWidth: 600 }}>
-        <CardMedia component="img" height="320" image={`assets/images/${image}`} alt="man" />
-        <CardContent style={{height:200}}>
+        <CardMedia component="img" height="320" image={`assets/images/${image}`} alt="BlogImage" />
+        <CardContent >
           <p className="bigCard_para1">{CardHeader}</p>
           <p className="bigCard_para2">
             {cardText}
@@ -22,7 +22,7 @@ function BigCard({image,CardHeader,cardText,cardLink, linkText}) {
 
           <Divider />
           <CardActions>
-            <Link className='bigCard_Button' to ={cardLink} >{linkText}</Link>
+            <Link className='bigCard_Button' to ={cardLink} >{linkName} </Link>
           </CardActions>
         </CardContent>
       </Card>
