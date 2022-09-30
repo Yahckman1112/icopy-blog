@@ -1,0 +1,15 @@
+.email_LandPage{
+    background-color: #F2F1EE;
+    height: 95vh;
+    padding-top: 40px;
+    position: relative;
+}
+
+.email_side{
+    padding: 10px;
+    border-radius: 15px;
+    background-image: url('/public/images/about_side.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}

@@ -2,7 +2,6 @@ import React from "react";
 import "./landPage.css";
 import { Link } from "react-router-dom";
 
-import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 function LandPage(props) {
   return (
     <div>
@@ -20,7 +19,7 @@ function LandPage(props) {
               Im porpularly known as story maker
             </span>
           </p>
-          <Link to="#" className="home__info--Button">
+          <Link to="/services" className="home__info--Button">
             Yes Please <i className="fa fa-sharp fa-solid fa-arrow-right"></i>
           </Link>{" "}
         </div>

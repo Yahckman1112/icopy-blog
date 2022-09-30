@@ -7,22 +7,25 @@ import Divider from "@mui/material/Divider";
 import { Link } from "react-router-dom";
 import "./bigCard.css";
 
-
-
-function BigCard({image,CardHeader,cardText,cardLink,linkName}) {
+function BigCard({ image, CardHeader, cardText, cardLink, linkName }) {
   return (
-    <div className="col-12 col-sm-5 bigCard">
+    <div className="col-12 col-sm-12 bigCard">
       <Card sx={{ maxWidth: 600 }}>
-        <CardMedia component="img" height="320" image={`assets/images/${image}`} alt="BlogImage" />
-        <CardContent >
+        <CardMedia
+          component="img"
+          height="320"
+          image={`assets/images/${image}`}
+          alt="BlogImage"
+        />
+        <CardContent>
           <p className="bigCard_para1">{CardHeader}</p>
-          <p className="bigCard_para2">
-            {cardText}
-          </p>
+          <p className="bigCard_para2">{cardText}</p>
 
           <Divider />
           <CardActions>
-            <Link className='bigCard_Button' to ={cardLink} >{linkName} </Link>
+            <Link className="bigCard_Button" to={cardLink}>
+              {linkName}{" "}
+            </Link>
           </CardActions>
         </CardContent>
       </Card>

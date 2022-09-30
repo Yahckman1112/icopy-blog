@@ -5,7 +5,6 @@ import { Texts } from "./text";
 
 
 function AboutBody(props) {
-  console.log(Texts[0]);
   return (
     <div className="container about_body col-12 col-sx-12 col-sm-9">
       <p className="about_para1 alert-warning col-sm-3 col-12">

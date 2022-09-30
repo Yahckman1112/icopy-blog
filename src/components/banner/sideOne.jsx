@@ -7,7 +7,7 @@ function BannerSideOne({ text, firstSpan, secondSpan, link = "#", linkName }) {
       <p className="banner_main_text">{text}</p>
 
       <p className="banner_sub">
-        <span> {firstSpan}</span> <br />
+        <span > {firstSpan}</span> <br />
         <span> {secondSpan}</span> <br />
         <div className="banner_btn_p">
         <Link className="banner_btn" to={link}>  

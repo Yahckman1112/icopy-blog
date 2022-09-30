@@ -10,6 +10,7 @@ import Footer from "./components/footer/footer";
 import NotFound from "./pages/not-found/notFound";
 import Services from "./pages/services/services";
 import CopyWriting from "./pages/copywriting/copyWriting";
+import EmailMarket from "./pages/emailMarketing/emailMarket";
 
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
         <AppBar />
 
         <Switch>
+          <Route path="/emailMarket" component={EmailMarket} />
           <Route path="/contact" component={Contact} />
           <Route path="/copywriting" component={CopyWriting} />
           <Route path="/blog" component={Blog} />

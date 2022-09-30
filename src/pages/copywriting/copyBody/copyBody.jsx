@@ -18,7 +18,7 @@ function CopyBody(props) {
                 body= {bod1.map((bod)=>(
                     <p>{bod.label}</p>
                 ))}
-                link='/'
+                link='/contact'
                 />
             </div>
 
@@ -29,7 +29,7 @@ function CopyBody(props) {
                 body= {bod2.map((bod)=>(
                     <p>{bod.label}</p>
                 ))}
-                link='/'
+                link='/contact'
                 />
             </div>
         </div>
