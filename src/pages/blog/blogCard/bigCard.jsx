@@ -15,7 +15,7 @@ function BigCard({ image, CardHeader, cardText, cardLink, linkName }) {
         <CardMedia
           component="img"
           height="320"
-          image={`assets/images/${image}`}
+          image={image}
           alt="BlogImage"
         />
         <CardContent>

@@ -8,7 +8,7 @@ function EmailBody(props) {
             <div className='row'style={{whiteSpace:'pre-line'}}>
                 <div className="col col-12 col-sm-5" > 
                     < LongCard
-                    title='Email Marketting'
+                    title='Email Marketing'
                     amount='2000'
                     body={texts.map(text=>(
                         <p>{text.text1}</p>
@@ -18,7 +18,7 @@ function EmailBody(props) {
                 </div>
                 <div className="col col-12 col-sm-5">
                 < LongCard
-                    title='Email Marketting'
+                    title='Additional Services'
                     amount='2000'
                     body={texts.map(text=>(
                         <p>{text.text2}</p>
