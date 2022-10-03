@@ -6,7 +6,6 @@ import Home from "./pages/home/home";
 import Blog from "./pages/blog/blog";
 import Contact from "./pages/contactus/contact";
 import About from "./pages/about/about";
-import Footer from "./components/footer/footer";
 import NotFound from "./pages/not-found/notFound";
 import Services from "./pages/services/services";
 import CopyWriting from "./pages/copywriting/copyWriting";
@@ -32,7 +31,7 @@ class App extends Component {
         </Switch>
        
       
-        <Footer />
+       
 
 
 

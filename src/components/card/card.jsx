@@ -8,7 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 import "./card.css";
-function CardComponent({ logo, title, text, link }) {
+function CardComponent({ logo, title, text, link,move }) {
   return (
     <div>
       <div className="card-design col-12 col-sm-12">
@@ -27,7 +27,7 @@ function CardComponent({ logo, title, text, link }) {
             <span className="card-text">{text}</span>
           </CardContent>
           <CardActions>
-            <Link className="card-btn" to="/">
+            <Link className="card-btn" to={`/${move}`}>
               {link}
             </Link>
           </CardActions>

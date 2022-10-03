@@ -9,7 +9,7 @@ import "./bigCard.css";
 
 function BigCard({ image, CardHeader, cardText, cardLink, linkName }) {
   return (
-    <div className="col-12 col-sm-6
+    <div className="col-12 col-sx-12 col-sm-6
      bigCard">
       <Card sx={{ maxWidth: 600 }}>
         <CardMedia

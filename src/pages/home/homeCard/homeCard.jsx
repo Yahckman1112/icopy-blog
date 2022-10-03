@@ -4,6 +4,7 @@ import "./homeCard.css";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import AcUnitRoundedIcon from "@mui/icons-material/AcUnitRounded";
 import HideSourceRoundedIcon from "@mui/icons-material/HideSourceRounded";
+import Footer from "./../../../components/footer/footer";
 // modular css
 function HomeCard(props) {
   return (
@@ -11,16 +12,16 @@ function HomeCard(props) {
       <div className="home-card row">
         <div className="col-12 col-sx-12   col-sm-4">
           <CardComponent
-
             logo=<InventoryIcon sx={{ fontSize: "50px" }} />
             title="copy writing"
             text=" Lorem ipsum dolor sit amet consectetur adipisicing elit.
            Non facilis tenetur vel ad provident fuga eum voluptates 
            impedit ut similique!"
             link="Get Sarted"
+            move="copywriting"
           />
         </div>
-        <div className="col-12 col-sx-12   col-sm-4">
+        <div className="col-12 col-sx-12  col-sm-4">
           <CardComponent
             logo=<AcUnitRoundedIcon sx={{ fontSize: "50px" }} />
             title="SEO ptimization"
@@ -28,6 +29,7 @@ function HomeCard(props) {
            Non facilis tenetur vel ad provident fuga eum voluptates 
            impedit ut similique!"
             link="Get Sarted"
+            move="#"
           />
         </div>
         <div className="col-12  col-sx-12   col-sm-4">
@@ -38,9 +40,12 @@ function HomeCard(props) {
            Non facilis tenetur vel ad provident fuga eum voluptates 
            impedit ut similique!"
             link="Get Sarted"
+            move="emailMarket"
           />
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
