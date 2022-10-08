@@ -4,14 +4,14 @@ import http from "./../../../service/httpService";
 import config from "./../../../config.json";
 //https://icopy-server.herokuapp.com/api/upload/post
 //http://jsonplaceholder.typicode.com/photos
-function BlogBody(props) {
+const BlogBody=()=> {
   const [posts, setposts] = useState([]);
   const max = 150;
   useEffect(() => {
     async function getPost() {
-      const result = await http.get(config.apiUrl);
+      const result = await http.get(`${config.apiUrl}`);
       setposts(result.data.data);
-      console.log(result.data.data);
+      console.log(result.data.data); 
     }
     getPost();
   }, []);
@@ -28,7 +28,7 @@ function BlogBody(props) {
               ? post.body.substring(0, max) + "....."
               : post.body
           }
-          cardLink="#"
+          cardLink={`blogs/${post._id}`}
           linkName="Read More"
         />
       ))}

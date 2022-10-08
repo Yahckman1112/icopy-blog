@@ -7,21 +7,24 @@ function Contact(props) {
   const [next, setNext] = useState(0);
   const texts = [
     {
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, ",
+      text: `We'll like to know you. Let's start by knowing your name. ...SO what's your name`,
     },
     {
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. , nam!",
+      text: `Awesome! What's your email?`,
     },
     {
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing . Quis, nam!",
+      text: `What's the greatest obstacle that's holding you back from hitting your revenue goal`,
     },
   ];
-
+  // const clear=()=>{
+  //   setEnterValue("")
+  // }
   // const navigate=useNavigate()
 
-  const handleChange = () => {
+  const handleChange = (event) => {
     const nextQuestion = next + 1;
     if (nextQuestion < texts.length) setNext(nextQuestion);
+    
     // navigate('/');
     else props.history.push("/");
   };
@@ -31,16 +34,15 @@ function Contact(props) {
         <div className={style.texts}>
           <Fade left>
             <p className={style.texts_main}>{texts[next].text}</p>
-            <input type="text" className="form-control" />
+            <input value={enterValue} type="text" className="form-control" />
             <button onClick={handleChange} className={style.contact_button}>
               Continue <i className="fa fa-sharp fa-solid fa-arrow-right"></i>
             </button>
           </Fade>
-        </div> 
+        </div>
       </div>
     </div>
   );
 }
 
 export default Contact;
-

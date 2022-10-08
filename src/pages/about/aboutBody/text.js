@@ -62,6 +62,6 @@ export const Texts = [
     text2: `"You don't even have past records to show how competent you are"`,
     },
     {
-    text2: `Who are you`,
+    text2: `Who are you?`,
     },
 ]
