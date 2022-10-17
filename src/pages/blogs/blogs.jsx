@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import http from "./../../service/httpService";
 import config from "./../../config.json";
 import BlogsBody from "./blogsbody/blogsBody";
+import Footer from './../../components/footer/footer';
+
 const Blogs = (props) => {
   const params = useParams();
   const id = params.id;
@@ -23,6 +25,7 @@ const Blogs = (props) => {
   return (
     <div>
       <BlogsBody data={datas} />
+      < Footer />
     </div>
   );
 };
