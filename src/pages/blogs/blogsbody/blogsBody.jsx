@@ -16,7 +16,9 @@ import ShareIcon from "@mui/icons-material/Share";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 function BlogsBody({ data }) {
-  const first = data.title.charAt(0);
+
+  const letter = data.title;
+  const first = letter.charAt(0)
   return (
     <div className="blogs_body container col-12 col-sx-12 col-sm-12">
       <div className="bodiedd">
