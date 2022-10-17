@@ -1,33 +1,30 @@
-import React, {  useState,useEffect } from 'react';
-import {useParams} from 'react-router-dom'
-import http from './../../service/httpService'
-import config from './../../config.json'
-const Blogs=(props)=> {
-    // const params = useParams()
-    // id=params.id
-    // console.log(id)
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import http from "./../../service/httpService";
+import config from "./../../config.json";
+import BlogsBody from "./blogsbody/blogsBody";
+const Blogs = (props) => {
+  const params = useParams();
+  const id = params.id;
+  console.log("this is params", params);
+  // const postId=props.match.params.id
+  // console.log(postId);
+  const [datas, setData] = useState([]);
 
-    const postId=props.match.params.id
-    console.log(postId);
-    const [data, setData]= useState([])
+  useEffect(() => {
+    async function getData() {
+      const result = await http.get(`${config.apiUrl}/${id}`);
+      setData(result.data.data);
+      console.log(result.data.data);
+    }
+    getData();
+  }, []);
 
-    useEffect(()=>{
-        async function getData(){
-            const result = await http.get(`${config.apiUrl}/${postId}`)
-            console.log(result);
-
-        }
-        getData()
-    },[])
-
-
-    return (
-
-        <div>
-        <h1>{`${postId}`}</h1>
-        <h1></h1>
-        </div>
-    );
-}
+  return (
+    <div>
+      <BlogsBody data={datas} />
+    </div>
+  );
+};
 
 export default Blogs;

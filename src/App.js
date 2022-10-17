@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import AppBar from "./components/appBar/appBar";
 // import NavBar from './components/navBar/navBar';
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Routes, Route, Redirect } from "react-router-dom";
 import Home from "./pages/home/home";
 import Blog from "./pages/blog/blog";
 import Contact from "./pages/contactus/contact";
@@ -18,21 +18,20 @@ class App extends Component {
       <div>
         <AppBar />
        
-        <Switch>
-          <Route path="/blog/:id"  component={Blogs} />
-          <Route path="/emailMarket" component={EmailMarket} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/copywriting" component={CopyWriting} />
-          <Route path="/blog" component={Blog} />
-          {/* <Route path="/not-found" component={NotFound} /> */}
-          <Route path="/services" component={Services} />
-          <Route path="/about" component={About} />
-          <Route path="/" exact component={Home} />
+        <Routes>
+          <Route path="/blog/:id"  element={<Blogs/>} />
+          <Route path="/emailMarket" element={<EmailMarket/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/copywriting" element={<CopyWriting/>} />
+          <Route path="/blog" element={<Blog/>} />
+          {/* <Route path="/not-found" element={<NotFound/>} /> */}
+          <Route path="/services" element={<Services/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/" exact element={<Home/>} />
           {/* <Redirect to="/not-found" /> */}
-        </Switch>
+        </Routes>
       </div>
     );
   }
 }
-
 export default App;
