@@ -10,7 +10,7 @@ function HomeCard(props) {
   return (
     <div>
       <div className="home-card row">
-        <div className="col-12 col-sx-12   col-sm-4">
+        <div className="col col-12 col-sx-12  col-sm-4">
           <CardComponent
             logo=<InventoryIcon sx={{ fontSize: "50px" }} />
             title="copy writing"

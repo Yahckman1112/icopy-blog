@@ -1,7 +1,8 @@
 .card-design{
     margin-right: 50px;
     text-align: center !important;
-    height: 70vh;
+    height: 80vh;
+    align-items: center;
   
 }
 
