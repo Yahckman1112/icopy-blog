@@ -33,6 +33,20 @@
 
     
 }
+@media screen and (max-width:1024px) {
+
+    .contact_button{
+        margin-top: 23px  !important;
+        padding:5px 15px !important;
+        background: #691111a4  ;
+         color: white ;
+        text-align: center ;
+        text-decoration: none ;
+       
+    }
+
+    
+}
 
 .texts{
     margin: 0 auto;
