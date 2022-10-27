@@ -9,15 +9,12 @@ import "./bigCard.css";
 
 function BigCard({ image, CardHeader, cardText, cardLink, linkName }) {
   return (
-    <div className="col-12 col-sx-12 col-sm-6
-     bigCard">
+    <div
+      className="col-12 col-sx-12 col-sm-6
+     bigCard"
+    >
       <Card sx={{ maxWidth: 600 }}>
-        <CardMedia
-          component="img"
-          height="320"
-          image={image}
-          alt="BlogImage"
-        />
+        <CardMedia component="img" height="320" image={image} alt="BlogImage" />
         <CardContent>
           <p className="bigCard_para1">{CardHeader}</p>
           <p className="bigCard_para2">{cardText}</p>

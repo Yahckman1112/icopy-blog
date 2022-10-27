@@ -5,16 +5,9 @@ import BigCard from "./../blogCard/bigCard";
 //https://icopy-server.herokuapp.com/api/upload/post
 //http://jsonplaceholder.typicode.com/photos
 const BlogBody=({posts})=> {
-//   const [posts, setposts] = useState([]);
+
   const max = 150;
-//   useEffect(() => {
-//     async function getPost() {
-//       const result = await http.get(`${config.apiUrl}`);
-//       setposts(result.data.data);
-//       console.log(result.data.data); 
-//     }
-//     getPost();
-//   }, []);
+
 
   return (
     <div style={{ display: "flex" }} className=" col-sx-12 col-12 col-sm-12">

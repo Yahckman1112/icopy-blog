@@ -10,7 +10,7 @@ function AboutLandingPage(props) {
             Marketer
           </p>
 
-          <p className="about_up_para2">
+          <p className="b">
             <span>Hey there</span>  <br />
             <span>Meet The StoryMarketer</span>
           </p>

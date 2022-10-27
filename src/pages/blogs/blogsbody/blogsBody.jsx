@@ -18,7 +18,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 function BlogsBody({ data }) {
 
   const letter = data.title;
-  const first = letter.charAt(0)
+  // const first = letter.charAt(0)
   return (
     <div className="blogs_body container col-12 col-sx-12 col-sm-12">
       <div className="bodiedd">
@@ -26,7 +26,7 @@ function BlogsBody({ data }) {
           <CardHeader
             avatar={
               <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                {first}
+                {/* {first} */} A
               </Avatar>
             }
             action={

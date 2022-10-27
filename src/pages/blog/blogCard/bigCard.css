@@ -5,9 +5,10 @@
     line-height: 2;
     text-align: center;
     letter-spacing: 10;
-    flex:1;
     margin-right:10px
 }
+
+
 
 .bigCard_para1{
     font-size: 30px;
