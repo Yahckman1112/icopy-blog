@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Divider from "@mui/material/Divider";
 import { Link } from "react-router-dom";
-import "./bigCard.css";
+import "./bigCard.scss";
 
 function BigCard({ image, CardHeader, cardText, cardLink, linkName }) {
   return (

@@ -2,3 +2,13 @@
     background-color: whitesmoke;
     padding-top: 30px;
 }
+
+@media size and (max-width:768px){
+    .ttt{
+        width: 100rem !important;
+    }
+}
+/* 
+@media screen and (max-width:900px) {
+    
+} */

@@ -19,8 +19,8 @@ function HomeBody(props) {
         <span className="homebody-para4">
           i think we the best solution for you
         </span>
-        <div className="homebody-para5 alert-warning">
-          <span>
+        <div className=" line homebody-para5 alert-warning">
+          <span >
             My name is Tajudeen Yusuf, and I'm popularly known as the
             StoryMarketer. I help businesses market their products by telling
             relatable stories, historical events, trending news, unforgettable
@@ -28,8 +28,8 @@ function HomeBody(props) {
             primarily through the medium of email and other copy formats
           </span>
         </div>
-        <span className="homebody-para4">But why STORYSELLING, you ask?</span>
-        <span className="homebody-para4">
+        <span className=" homebody-para4">But why STORYSELLING, you ask?</span>
+        <span className=" homebody-para4">
           Stories, since inception, have been used to sell millions of products
           to prospects because they work. Here's the truth you don't know:{" "}
           <br />

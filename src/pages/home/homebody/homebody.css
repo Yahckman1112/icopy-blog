@@ -35,10 +35,17 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 30px;
     font-size: 18px;
     font-weight: 400;
-    /* border: 0px 0 0 20px;
-    border-color: red; */
+   
     text-align: justify;
-    display: block;
+    display: flex;
+    border-left: 3px solid red;
+
+    
+}
+
+.line{
+    border-left: 3px solid red;
+    margin: 0 auto;
 }
 
 

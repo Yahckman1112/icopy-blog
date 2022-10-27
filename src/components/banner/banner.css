@@ -5,6 +5,28 @@
     
 }
 
+@media screen and (max-width:768px) {
+    .banner_main_text{
+        font-size: 30px;
+        font-weight: bold;
+       
+
+    }
+
+    .banner_sub{
+        font-weight: bold;
+        padding-top: 10px !important;
+    }
+
+    .banner_first_side{
+        position: absolute;
+        left:0% !important;
+        top: 0% !important;
+        
+    }
+
+
+}
 .banner_sub{
     
     padding-top: 60px;

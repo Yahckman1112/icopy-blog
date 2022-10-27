@@ -20,7 +20,7 @@ function Footer(props) {
 
 
         <div className="row footer_mail-icons">
-          <div className=" col-sx-12 col-sm-6 col-md-6 footer_social">
+          <div className=" col-sx-12 col-sm-6 col-md-6 footer-send footer_social">
             <Link to="#" className="footer_mail--button">
               Send
             </Link>{" "}

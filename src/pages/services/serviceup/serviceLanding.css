@@ -15,3 +15,18 @@
     background-position: top;
     height: 80vh;
 }
+
+@media screen and (max-width:570px) {
+    .service_landing{
+        height: auto;
+    }
+
+    .service_land_bg{
+        /* margin-top: 10px; */
+        height: 70vh;
+        background-position: center;
+        
+    }
+
+
+}
