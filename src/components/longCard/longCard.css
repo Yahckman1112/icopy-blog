@@ -6,6 +6,19 @@
     
 }
 
+@media screen and (max-width:768px) {
+    .long_card{
+        margin:  0px ;
+        margin-bottom: 20px;
+    }
+
+    
+    .long_btn_container{
+        padding:10px;
+        margin-left: 55px !important;
+    }
+}
+
 
 .long_card_para1{
     color: #cc1571;

@@ -20,3 +20,9 @@
     background-position: center;
     height: 80vh;
 }
+
+@media screen and (max-width:768px) {
+    .copy_land{
+        margin-bottom: 230px;
+    }
+}
