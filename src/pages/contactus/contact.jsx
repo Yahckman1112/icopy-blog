@@ -34,7 +34,7 @@ function Contact(props) {
         <div className={style.texts}>
           <Fade left>
             <p className={style.texts_main}>{texts[next].text}</p>
-            <input  type="text" className="form-control" />
+            <input  type="text" className={`${style.texts} form-control`} />
             <button onClick={handleChange} className={style.contact_button}>
               Continue <i className="fa fa-sharp fa-solid fa-arrow-right"></i>
             </button>

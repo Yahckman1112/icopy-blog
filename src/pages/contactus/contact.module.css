@@ -5,6 +5,34 @@
     align-items: center;
     text-align:center;
 }
+@media screen and (max-width:768px) {
+    .contact_body{
+        height: auto;
+        padding: 10px; 
+       
+    }
+    .contact_button{
+        margin-top: 23px  !important;
+        padding:5px 15px !important;
+        background: #691111a4  ;
+         color: white ;
+        text-align: center ;
+        text-decoration: none ;
+       
+    }
+
+    .texts{
+        /* margin: 0 auto; */
+        width:1000%;
+        width: 100% !important;
+        /* padding-top: 10%; */
+    
+    }
+
+
+
+    
+}
 
 .texts{
     margin: 0 auto;
@@ -23,7 +51,7 @@
 
 .contact_button{
     margin-top: 23px;
-    padding:10px 195px;
+    padding:10px 155px;
     background: #691111a4 ;
     color: white;
     text-align: center;
