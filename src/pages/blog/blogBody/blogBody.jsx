@@ -10,7 +10,7 @@ const BlogBody=({posts})=> {
 
 
   return (
-    <div style={{ display: "flex" }} className=" col-sx-12 col-12 col-sm-12">
+    <div className=" col-sx-12 col-12 col-sm-12">
       {posts.map((post, i) => (
         <BigCard
           key={i}

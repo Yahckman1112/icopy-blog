@@ -20,7 +20,7 @@ const AppBars = () => {
   const handleOpenNavMenu = (event) => {
     setanchorElNav(event.currentTarget);
   };
-  const open = Boolean(anchorElNav);
+  // const open = Boolean(anchorElNav);
   const handleCloseNavMenu = () => {
     setanchorElNav(null);
   };
@@ -30,7 +30,7 @@ const AppBars = () => {
         position="static"
         style={{ backgroundColor: "#F2F1EE", color: "black" }}
       >
-        <Container maxWidth="x1">
+        <Container maxWidth="xl">
           <Toolbar disableGutters>
             {/* <BookmarkIcon sx={{ display: { xs: "none", md: "flex" },  mr: 1 }} /> */}
             <Typography
@@ -56,30 +56,34 @@ const AppBars = () => {
                 aria-label="account of current user"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
-                onclick={handleOpenNavMenu}
+                onClick={handleOpenNavMenu}
                 color="inherit"
               >
-                <MenuIcon />
+                {/* <MenuIcon /> */}
               </IconButton>
               <Menu
                 id="menu-appbar"
                 anchorEl={anchorElNav}
-                anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+                anchorOrigin={{ vertical: "top", horizontal: "left" }}
                 keepMounted
                 tranformOrigin={{ vertical: "top", horizontal: "left" }}
-                open={open}
+                open={Boolean(anchorElNav)}
                 onClose={handleCloseNavMenu}
                 sx={{
                   display: { xs: "block", md: "none" },
                 }}
               >
-                {pages.map((page) => (
+                 {pages.map((page) => (
                   <MenuItem key={page.text} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">
                     <Link to={page.href}> {page.text} </Link>
-                    {/* <Typography textAlign="center"></Typography> */}
+
+                    </Typography>
                   </MenuItem>
                 ))}
-              </Menu>
+               
+              </Menu> 
+              
             </Box>
             {/* <BookmarkIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
             <Typography
@@ -107,7 +111,7 @@ const AppBars = () => {
                   key={page.text}
                   onClick={handleCloseNavMenu}
                   href={page.href}
-                  sx={{ my: 2, mx: 1, color: "black", display: "black" }}
+                  sx={{ my: 2, mx: 1, color: "black", display: "block" }}
                 >
                   {page.text}
                 </Button>
