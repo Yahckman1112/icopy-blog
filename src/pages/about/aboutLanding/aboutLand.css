@@ -103,6 +103,8 @@
 
 @media screen and (max-width:430px) {
     .about{
-        margin-bottom: 150px;
+        margin-bottom: 8px;
+        height: auto;
+        padding-bottom: 20px;
     }
 }
