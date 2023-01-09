@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import {HiOutlineMenuAlt1} from 'react-icons/hi'
 import styles from './navBar.module.scss'
-import offcanvas from 'react-bootstrap/offcanvas'
+// import offcanvas from 'react-bootstrap/offcanvas'
 const linkStyle = {
     textDecoration:'none'
 }
@@ -30,7 +30,7 @@ const AppHeader = () => {
                <div style={{float:'right'}} className='pull-right'>
                    
                     <HiOutlineMenuAlt1 size={29} onClick={handleShow} />
-                    <offcanvas show={true}></offcanvas>
+                    {/* <offcanvas show={true}></offcanvas> */}
 
                </div>
             </div>

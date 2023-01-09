@@ -6,7 +6,7 @@ function LandPage(props) {
   return (
     <div >
       <div className="row homeLandPage">
-        <div className="col col-12 col-sm-6  home__info">
+        <div className="col col-12 col-lg-6 col-md-6  home__info">
           <p>
             Stories are Magnets that Automatically Attract{" "}
             <span className="head__info--main">prospects</span> to your{" "}
@@ -24,7 +24,7 @@ function LandPage(props) {
           </Link>{" "}
         </div>
 
-        <div className="col-12 col-sm-6 home__head--pix"> </div>
+        <div className="col-12 col-lg-6 col-md-6 home__head--pix"> </div>
       </div>
     </div>
   );

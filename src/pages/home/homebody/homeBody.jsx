@@ -5,7 +5,7 @@ function HomeBody(props) {
     <div className=" homebody container col-12 col-sm-9 col-md-lg-6 col-xs-12">
       {/* <div className='alert-warning'> loremn bnaxdbjaskjdlksadlksad</div> */}
 
-      <p className="homebody-para1 alert-warning col-12 col-sm-3">
+      <p className="homebody-para1 alert-warning">
         Shall we help sell your stories{" "}
       </p>
       <p>
@@ -22,7 +22,7 @@ function HomeBody(props) {
         <div className=" line homebody-para5 alert-warning">
           <span >
             My name is Tajudeen Yusuf, and I'm popularly known as the
-            StoryMarketer. I help businesses market their products by telling
+            Story Marketer. I help businesses market their products by telling
             relatable stories, historical events, trending news, unforgettable
             movie scenes, relevant anecdotes, witty sayings and proverbs, etc
             primarily through the medium of email and other copy formats
