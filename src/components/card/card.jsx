@@ -10,8 +10,8 @@ import { Link } from "react-router-dom";
 import "./card.css";
 function CardComponent({ logo, title, text, link,move }) {
   return (
-    <div>
-      <div className="card-design col-12 col-sm-12">
+    <div className="row">
+      <div className="card-design col-12 col-lg-12 col-md-12">
         <Card className="card">
           <CardContent>
             <IconButton

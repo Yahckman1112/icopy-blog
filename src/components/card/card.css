@@ -8,9 +8,9 @@
 
 
 .card{
-    border-radius: 10%;
     height: 90%;
     padding-top: 30px;
+    /* width: 100% !important; */
 }
 
 
@@ -64,3 +64,24 @@
     color: #fff;
     text-decoration: none;
 }   
+
+@media screen and (max-width:768px) {
+    .card-btn{
+        padding: 8px 30px;
+        margin-left: 40%;
+        
+    }
+
+    .card-text{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width:430px) {
+    .card-btn{
+        padding: 6px 25px;
+        margin-left: 32%;
+
+    }
+    
+}

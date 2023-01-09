@@ -1,13 +1,16 @@
 .home-card{
     background-color: whitesmoke;
-    padding-top: 30px;
+    padding-top: 20px;
+}
+.ttt{
+    width: 100% !important;
 }
 
-@media size and (max-width:768px){
+/* @media size and (max-width:768px){
     .ttt{
         width: 100rem !important;
     }
-}
+} */
 /* 
 @media screen and (max-width:900px) {
     
