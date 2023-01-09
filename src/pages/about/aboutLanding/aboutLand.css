@@ -1,49 +1,73 @@
-.about{
+/* .about{
     width: 100%;
-}
+} */
 
-@media screen and (max-width:768px) {
-    /* .about{
-        height: auto;
-        width: auto;
-    } */
+/* .about-up{
+    height: 100vh;
+    /* width: 100%; */
+    /* background-color: #F2F1EE;
+    padding-top: 20px; */
+   
+/* } */ 
+/* .about_up_main{
+    height: 80%;
+    position: absolute;
+    /* left: 10%; */
+    /* padding: 10% 0px 0px 20px; */
+    
+    
+/* } */ 
 
-    .about-up{
+/* .about_up_para1{
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+/* .about_up_para1_span{
+    cursor: pointer;
+    border-bottom: 2.5px solid red;
+} */
+
+
+/* 
+.about__head--pix{
+    padding: 10px;
+    border-radius: 15px;
+    background-image: url('/public/images/about_side.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+} */
+
+/* @media screen and (max-width:768px) { */
+ 
+
+    /* .about-up{
         height: auto !important;
         padding-top: 1px !important;
+
     }
 
-    .about_up_para2{
-        font-size: 20px;
+    .about_up_main{
+        padding: 30px;
+
     }
-    .about__head--pix{
-        padding: 10px;
-        border-radius: 10px;
-     
-        
-        background-position: center;
-        height: 75vh;
-    }
+
+    .about_up_para1{
+        font-size: 35px;
+        font-weight: 500;    
+    } */
+
+/*  
+   
+/* } */ 
+
+.about{
+    background-color:#F2F1EE ;
+    height: 80vh;
 }
-
-
-
-.about-up{
-    height: 100vh;
-    width: 100%;
-    background-color: #F2F1EE;
-    padding-top: 20px;
-    position: relative;
-}
-.about_up_main{
-    height: 70%;
-    position: absolute;
-    left: 10%;
-    padding: 10% 0px 0px 20px;
-    
-    
-}
-
 .about_up_para1{
     font-size: 45px;
     font-weight: 500;
@@ -52,19 +76,33 @@
 
 .about_up_para1_span{
     cursor: pointer;
-    text-underline-position: below;
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-decoration-style: 1px solid;
+    border-bottom: 2.5px solid red;
+}
+
+.b{
+    font-weight: bold;
 }
 
 
 
 .about__head--pix{
-    padding: 10px;
-    border-radius: 15px;
     background-image: url('/public/images/about_side.jpg');
     background-size: cover;
-    background-position: top;
+    background-position: center;
+    border-radius: 10px;
     height: 80vh;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .about_up_para1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .about{
+        margin-bottom: 150px;
+    }
 }

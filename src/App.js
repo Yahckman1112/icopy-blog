@@ -11,12 +11,14 @@ import CopyWriting from "./pages/copywriting/copyWriting";
 import EmailMarket from "./pages/emailMarketing/emailMarket";
 import Blogs from "./pages/blogs/blogs";
 import NavBar from './components/appBar/navBar';
+import AppBars from "./components/appBar/appBar";
 
 class App extends Component {
   render() {
     return (
       <div>
-         < NavBar />
+         {/* < NavBar /> */}
+         < AppBars/>
 
         <Routes>
           <Route path="/blog/:id" element={<Blogs />} />
