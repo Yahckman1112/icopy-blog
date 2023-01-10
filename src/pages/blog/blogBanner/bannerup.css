@@ -22,3 +22,25 @@
     background-position: center;
     height: 80vh;
 }
+
+@media screen and (max-width:768px) {
+    .homeLandPage{
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .blogBanner_para1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:430px) {
+    .homeLandPage{
+        margin-bottom: -1px;
+    }
+    
+    
+    .blogBanner_para1{
+        font-size: 35px;
+    }
+
+}

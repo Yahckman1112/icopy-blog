@@ -10,22 +10,29 @@ const BlogBody=({posts})=> {
 
 
   return (
-    <div className=" col-sx-12 col-12 col-sm-12">
+
+    <div className="row">
+
       {posts.map((post, i) => (
-        <BigCard
-          key={i}
-          image={post.filename}
-          CardHeader={post.title}
-          cardText={
-            post.body.length > max
-              ? post.body.substring(0, max) + "....."
-              : post.body
-          }
-          cardLink={`/blog/${post._id}`}
-          linkName="Read More"
-        />
-      ))}
+      <div className=" col-12 col-lg-4 col-md-12 ">
+     
+          <BigCard
+            key={i}
+            image={post.Image}
+            CardHeader={post.Title}
+            // cardText={
+            //   post.body.length > max
+            //     ? post.body.substring(0, max) + "....."
+            //     : post.body
+            // }
+            // cardLink={`/blog/${post._id}`}
+            cardLink={post.NewsLink}
+            linkName="Read More"
+          />
+      </div>
+        ))}
     </div>
+
   );
 }
 

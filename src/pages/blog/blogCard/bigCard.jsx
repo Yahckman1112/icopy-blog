@@ -9,10 +9,9 @@ import "./bigCard.css";
 
 function BigCard({ image, CardHeader, cardText, cardLink, linkName }) {
   return (
-    <div
-      className="col-12 col-sx-12 col-sm-6
-     bigCard"
-    >
+    <div className="">
+
+    <div  className="bigCard">
       <Card sx={{ maxWidth: 600 }}>
         <CardMedia component="img" height="320" image={image} alt="BlogImage" />
         <CardContent>
@@ -27,6 +26,7 @@ function BigCard({ image, CardHeader, cardText, cardLink, linkName }) {
           </CardActions>
         </CardContent>
       </Card>
+    </div>
     </div>
   );
 }

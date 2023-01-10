@@ -65,3 +65,10 @@
     padding:10px;
     margin-left: 35%;
 }
+
+@media screen and (max-width:430px) {
+    .long_btn_container{
+        margin-left: 32% !important;
+
+    }
+}
